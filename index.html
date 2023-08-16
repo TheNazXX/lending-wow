@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/style/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
     <script src="./assets/js/index.js" defer></script>
+    <link rel="icon" type="image/png" href="./assets/images/logo.svg">
     <title>Wow</title>
   </head>
   <body>
@@ -63,9 +64,15 @@
               </div>
             </button>
 
-            <button class="search">
+            <button class="search header__search">
               <img src="./assets/images/search.svg" alt="search" class="search__img" />
             </button>
+
+            <div class="burger js-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </nav>
         </div>
       </header>
@@ -75,37 +82,58 @@
           <h1 class="title">There are many variations of passages</h1>
           <p class="main-section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
-          <button class="btn">
+          <button class="btn main-section__inner-btn">
             <span class="btn__text">Boosting now</span>
             <img class="btn__img" src="./assets/images/arrow-btn.svg" alt="arrow-btn" />
           </button>
-        </div>
 
-        <img class="main-section__hero" src="./assets/images/main-hero.png" alt="hero" />
-      </div>
-
-      <div class="main-section__slider">
-        <div class="main-section__slider-btns">1</div>
-
-        <div class="main-section__slider-items swiper">
-          <div class="swiper-wrapper">
-            <div class="main-section__slider-item swiper-slide" style="background-image: url('./assets/images/slide-2.png')">
-              <span class="main-section__slider-item-text">WoW Boosting</span>
-              <img src="./assets/images/slide-1-hero.png" alt="slider-item" class="main-section__slider-item-img" />
-            </div>
-  
-            <div class="main-section__slider-item swiper-slide" style="background-image: url('./assets/images/slide-1.png')">
-              <span class="main-section__slider-item-text">LoL Boosting</span>
-              <img src="./assets/images/slide-2-hero.png" alt="slider-item" class="main-section__slider-item-img" />
-            </div>
-  
-            <div class="main-section__slider-item swiper-slide" style="background-image: url('./assets/images/slide-3.png')">
-              <span class="main-section__slider-item-text">Diablo Boosting</span>
-              <img src="./assets/images/slide-3-hero.png" alt="slider-item" class="main-section__slider-item-img" />
-            </div>
+          
+          <div class="main-section__slider-btns">
+            <button class="main-section__slider-btn main-section__slider-btn--prev js-swiper-button-prev">
+              <img src="./assets/images/arrow.svg" alt="arrow-img" />
+            </button>
+            <div class="swiper-pagination js-swiper-pagination"></div>
+            <button class="main-section__slider-btn main-section__slider-btn--next js-swiper-button-next">
+              <img src="./assets/images/arrow.svg" alt="arrow-img" />
+            </button>
           </div>
         </div>
       </div>
+
+      <img class="main-section__hero" src="./assets/images/main-hero.png" alt="hero" />
+
+
+      
+
+      <div class="main-section__slider-items swiper">
+        <div class="swiper-wrapper">
+          <div class="main-section__slider-item swiper-slide" style="background-image: url('./assets/images/slide-2.png')">
+            <span class="main-section__slider-item-text">WoW Boosting</span>
+            <img src="./assets/images/slide-1-hero.png" alt="slider-item" class="main-section__slider-item-img" />
+          </div>
+
+          <div class="main-section__slider-item swiper-slide" style="background-image: url('./assets/images/slide-1.png')">
+            <span class="main-section__slider-item-text">LoL Boosting</span>
+            <img src="./assets/images/slide-2-hero.png" alt="slider-item" class="main-section__slider-item-img" />
+          </div>
+
+          <div class="main-section__slider-item swiper-slide" style="background-image: url('./assets/images/slide-3.png')">
+            <span class="main-section__slider-item-text">Diablo Boosting</span>
+            <img src="./assets/images/slide-3-hero.png" alt="slider-item" class="main-section__slider-item-img" />
+          </div>
+
+          <div class="main-section__slider-item swiper-slide" style="background-image: url('./assets/images/slide-2.png')">
+            <span class="main-section__slider-item-text">WoW Boosting</span>
+            <img src="./assets/images/slide-1-hero.png" alt="slider-item" class="main-section__slider-item-img" />
+          </div>
+
+          <div class="main-section__slider-item swiper-slide" style="background-image: url('./assets/images/slide-2.png')">
+            <span class="main-section__slider-item-text">WoW Boosting</span>
+            <img src="./assets/images/slide-1-hero.png" alt="slider-item" class="main-section__slider-item-img" />
+          </div>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
