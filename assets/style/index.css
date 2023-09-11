@@ -208,6 +208,12 @@ body {
   display: flex;
 }
 
+.paying__title{
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500
+}
+
 .paying__item{
   display: flex;
   justify-content: center;
@@ -233,6 +239,11 @@ body {
   width: 26px;
   height: 26px;
   background-color: var(--light-grey);
+}
+
+.brands__stars-block_inner--long .stars__item{
+  width: 20px;
+  height: 20px;
 }
 
 .stars__item svg{
@@ -622,6 +633,10 @@ body {
   background-position: center;
 }
 
+.brands--m-long{
+  margin: 0 13px;
+}
+
 .brands__inner{
   border-radius: 30px;
   padding: 40px;
@@ -633,7 +648,6 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-
 
 .brands__item{
   margin: 15px;
@@ -704,6 +718,7 @@ body {
 
 .brands__item-rate--full{
   margin: 0;
+  margin-right: 17px;
   padding-bottom: 0;
   padding: 10px 0;
   padding-right: 20px;
@@ -721,14 +736,18 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 63px;
-  height: 63px;
+  width: 57px;
+  height: 57px;
 }
 
 .brands__item-rate-elips svg{
   position: absolute;
   width: 63px;
   height: 63px;
+}
+
+.brands__paying{
+  margin: 0 23px 0 17px;
 }
 
 
@@ -764,8 +783,24 @@ body {
   align-items: center;
 }
 
+.brands__stars-block--long{
+  display: block;
+  margin: 0;
+}
+
+.brands__stars-block_inner--long{
+  display: flex;
+  margin-bottom: 9px;
+}
+
 .brands__stars-block-text{
   margin-right: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.brands__stars-block_subtext{
+  color: #ABABAB;
   font-size: 18px;
   font-weight: 600;
 }
@@ -787,6 +822,20 @@ body {
   padding: 27px 20px 13px;
 }
 
+.brands__promo--long{
+  padding: 6px 13px;
+
+  display: block;
+}
+
+
+.brands__promo_inner{
+  display: flex;
+  justify-content: center;
+}
+
+
+
 .brands__promo-text{
   margin-right: 8px;
   color: #ABABAB;
@@ -798,6 +847,10 @@ body {
   margin-left: 26px;
   font-size: 20px;
   font-weight: 600;
+}
+
+.brands__promo--long .brands__promo-code{
+  margin: 0 auto;
 }
 
 .brands__discount{
