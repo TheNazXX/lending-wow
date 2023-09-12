@@ -45,6 +45,18 @@ body {
   padding: 0 15px;
 }
 
+.section-container{
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.section-title{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
 .main-section {
   background-image: url('../images/main-bg.png');
   background-position: center;
@@ -892,7 +904,7 @@ body {
 
 /*--------------------info------------------*/
 .info{
-  padding-top: 120px;
+  padding: 120px 0;
   background-color: black;
 }
 
@@ -1129,7 +1141,100 @@ background: linear-gradient(180deg, #FA5D10 0%, #FC9D05 95.31%);
   font-weight: 900;
 }
 
+/*--------------------blog------------------*/
 
+.blog{
+  padding: 80px 0;
+  height: 800px;
+  background-image: url('../../assets/images/blog-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog__title{
+  margin-bottom: 60px;
+}
+
+.blog__items{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.blog__item{
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  position: relative;
+  width: 370px;
+  height: 394px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.blog__item:nth-child(1){
+  background-image: url("../../assets/images/blog-img.jpg");
+}
+
+.blog__item:nth-child(2){
+  background-image: url("../../assets/images/blog-img-2.jpg");
+}
+
+.blog__item:nth-child(3){
+  background-image: url("../../assets/images/blog-img-3.jpg");
+}
+
+.blog__item-img-wrap{
+  position: absolute;
+  width: 409px;
+  bottom: -30px;
+  left: -20px;
+  margin: 0 auto;
+}
+
+.blog__item__title{
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.blog__item__text{
+  width: 298px;
+  position: relative;
+  z-index: 1;
+  color: #B1B1B1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 161.523%; /* 25.844px */
+}
+
+
+.blog__item__btn{ 
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px 0px;
+  border: 1px solid #000;
+  background: radial-gradient(229.74% 191.78% at 25.37% -44.35%, #2FB1D9 0%, #38B0D6 26.35%, #2887BC 59.34%, #6173D5 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 
 
