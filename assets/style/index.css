@@ -218,7 +218,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 6px;
+  padding: 4px 5px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
 }
@@ -634,7 +634,7 @@ body {
 }
 
 .brands--m-long{
-  margin: 0 13px;
+  margin: 0 10px;
 }
 
 .brands__inner{
@@ -645,11 +645,12 @@ body {
 
 .brands__items{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .brands__item{
+  position: relative;
   margin: 15px;
   padding: 15px 20px;
   width: 100%;
@@ -663,7 +664,7 @@ body {
   display: flex;
   align-items: center;
   margin: 30px 0;
-  padding: 25px 20px;
+  padding: 0px 15px;
   max-width: 100%;
 }
 
@@ -742,8 +743,8 @@ body {
 
 .brands__item-rate-elips svg{
   position: absolute;
-  width: 63px;
-  height: 63px;
+  width: 57px;
+  height: 57px;
 }
 
 .brands__paying{
@@ -861,6 +862,16 @@ body {
   margin: 0 auto;
 }
 
+.brands__discount--long{
+  width: 200px;
+  height: 36px;
+  position: absolute;
+  top: -5%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
 
 .brands__btn-inner{
   padding: 15px 20px;
@@ -870,6 +881,255 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+@media(max-width: 1360px){
+  .brands__item--full{
+    padding: 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*--------------------info------------------*/
+.info{
+  padding-top: 120px;
+  background-color: black;
+}
+
+.info__title{
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.info__title--mb-lg{
+  margin-bottom: 106px;
+}
+
+.info__sales-items{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.info__sales-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 13px 24px;
+  margin: 0px 15px;
+  width: 270px;
+  height: 474px;
+  background: red;
+  background-position: center;
+  background-image: url("../../assets/images/top-sales-hero.png");
+  background-size: cover;
+  border-radius: 23px;
+  border: 2px solid #fff;
+}
+
+.info__sales-item:nth-child(1){
+    background-image: url("../../assets/images/top-sales-hero.png");
+}
+.info__sales-item:nth-child(2){
+    background-image: url("../../assets/images/top-sales-hero-2.png");
+}
+.info__sales-item:nth-child(3){
+    background-image: url("../../assets/images/top-sales-hero-3.png");
+}
+.info__sales-item:nth-child(4){
+    background-image: url("../../assets/images/top-sales-hero-4.png");
+}
+
+.info__sales-item-wrap-img{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.info__sales-item-text{
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  font-size: 24px;
+  font-weight: 600;
+  
+}
+
+.info__sales-item-footer{
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.info__sales-item-price{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.info__sales-item__btn{
+  width: 127px;
+  height: 47px;
+}
+
+.info__sales-item__btn-text{
+  font-size: 13px;
+}
+
+.info__description-items{
+  margin: 0 auto;
+  padding: 32px 30px;
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  border: 2px solid #9C8064;
+
+}
+
+.info__description-item{
+  width: 393px;
+}
+
+.info__description-item p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 161.523%; /* 32.305px */
+}
+
+.info__description-item p:nth-child(2){
+  margin-top: 30px;
+}
+
+.info__description-item p span{
+  font-weight: 700;
+  color: white
+}
+
+.info__description-img{
+  width: 314px;
+  height: 627px;
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.info__description-btn{
+  display: block;
+  margin: 83px auto 120px;
+}
+
+
+
+.advantages__items{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.advantages__item{
+  position: relative;
+  margin: 0 15px;
+  padding: 25px 20px 9px;
+  width: 270px;
+  min-height: 279px;
+  border-radius: 10px;
+  background: #201E29;
+  overflow: hidden;
+}
+
+
+.advantages__item__img{
+  margin-bottom: 20px;
+  width: 93px;
+  height: 93px;
+}
+
+.advantages__item__title{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  border-bottom: 1px solid #3C3A42;
+}
+
+.advantages__item:nth-child(1) .advantages__item__title{
+  color: #E64272;
+}
+
+.advantages__item:nth-child(1) .advantages__item__info{
+  border-radius: 0px 10px 10px 0px;
+  background: linear-gradient(180deg, #E74269 0%, #DD4CEE 100%);
+}
+
+
+.advantages__item:nth-child(2) .advantages__item__title{
+  color: #A33DF3;
+}
+
+
+.advantages__item:nth-child(2) .advantages__item__info{
+  border-radius: 0px 10px 10px 0px;
+  background: linear-gradient(180deg, #A33DF3 46.95%, #6EB5D3 93.73%, #77F4F3 100%);
+}
+
+
+.advantages__item:nth-child(3) .advantages__item__title{
+  color: #FA5E10;
+}
+
+
+.advantages__item:nth-child(3) .advantages__item__info{
+  border-radius: 0px 10px 10px 0px;
+background: linear-gradient(180deg, #FA5D10 0%, #FC9D05 95.31%);
+}
+
+
+.advantages__item:nth-child(4) .advantages__item__title{
+  color: #49D908;
+}
+
+.advantages__item:nth-child(4) .advantages__item__info{
+  border-radius: 0px 10px 10px 0px;
+  background: linear-gradient(180deg, #4BDC06 0%, #1C823F 100%);
+}
+
+.advantages__item__text{
+  max-width: 191px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 161.523%; /* 25.844px */
+}
+
+.advantages__item__info{
+  padding: 15px 8px;
+  position: absolute;
+  writing-mode: vertical-rl;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: red;
+
+  font-size: 18px;;
+  font-weight: 900;
+}
+
+
 
 
 
