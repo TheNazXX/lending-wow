@@ -22,6 +22,27 @@ const swiperContainer = new Swiper('.swiper', {
   }
 });
 
+(function(){
+  const faqItems = document.querySelector(".js-faq-items");
+  faqItems.addEventListener('click', function(e){
+    if(e.target.parentNode.classList.contains('js-faq-btn')){
+      Array.from(faqItems.children).forEach(elem => {
+        elem.classList.add('faq__item--disabled')
+      })
+
+      let parentElement = e.target.parentNode;
+      
+      while(!parentElement.classList.contains('faq__item')){
+        parentElement = parentElement.parentNode
+      }
+
+      parentElement.classList.remove('faq__item--disabled')
+    }
+  })
+})();
+
+
+
 
 
 
