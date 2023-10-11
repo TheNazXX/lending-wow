@@ -508,7 +508,7 @@ body {
 .main-section__inner {
   position: relative;
   z-index: 2;
-  margin: 115px 0 20px;
+  margin: 115px 0 0;
   max-width: 680px;
 }
 
